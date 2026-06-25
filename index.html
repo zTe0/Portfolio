@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            margin-bottom: 0.75rem;
+        }
+        a {
+            display: block;
+            padding: 0.75rem 1rem;
+            background: #f5f5f5;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: background 0.2s, transform 0.1s;
+        }
+        a:hover {
+            background: #e8e8e8;
+            transform: translateX(4px);
+        }
+        a:active {
+            transform: translateX(0);
+        }
+        a::before {
+            content: "→ ";
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        a:hover::before {
+            opacity: 1;
+        }
+        .placeholder {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Portfolio - Matteo L.L.</h1>
+    <ul>
+        <li><a href="https://ground-track-dashboard.onrender.com" target="_blank" rel="noopener">Ground Track Dashboard | Py</a></li>
+        <li><a href="https://satops-telemetry-monitor.onrender.com" target="_blank" rel="noopener">Satops Telemetry Monitor | Py</a></li>
+        <li><a href="https://groundops-console.onrender.com" target="_blank" rel="noopener">Ground Ops console | Py</a></li>
+        <li><a href="https://zte0.github.io/On-Board-Computer-Software-Stack/" target="_blank" rel="noopener">Satellite On-Board Computer Software | C++</a></li>
+        <li><a href="https://zTe0.github.io/Geosynchronous-Locally-Geostationary-Orbit/" target="_blank" rel="noopener">Geosynchronous-Locally-Geostationary-Orbit | C</a></li>
+        
+        <li><a href="https://github.com/zTe0/" target="_blank" rel="noopener">My GitHub</a></li>
+        <!-- <li><a href="https://github.com/zTe0/" target="_blank" rel="noopener">My GitHub</a></li> -->
+        <li><a href="https://github.com/zTe0/GNC_workshop" target="_blank" rel="noopener">S/C GNC - UKF,EKF,Monte Carlo, and more... | MATLAB (repository)</a></li>
+        <li><a href="https://github.com/zTe0/GNC_workshop/blob/main/Extra/Spacecraft%20Attitude%20Dynamics/Attitude_Dynamics_Project.pdf" target="_blank" rel="noopener">ADCS - Detumbling, Slew Maneuver, Pointing | Simulink (report)</a></li>
+    </ul>
+</body>
+</html>
